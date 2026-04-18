@@ -61,5 +61,6 @@ Image quality and performance improvements.
 ### Enhancements
 
 - Customizable splat encoding ranges (rgb, sh1, sh2, sh3) for wider range of colors and scales support improving contrast and color reproduction. Expose `premultipliedAlpha` flag to use when accumulating splat RGB (#134) (@asundqui)
-- [Experimental Stochastic splat ordering option](https://sparkjs.dev/examples/stochastic/). Faster rendering since sorting no longer needed but with some visual quality tradeoffs (#8f5596e) (@asundqui)
-- Higher precision mode (float32) for splat sorting in addition to the default one (float16)
+- [Experimental Stochastic splat ordering option](https://sparkjs.dev/examples/stochastic/). Faster rendering since sorting no longer needed but with some v
+
+> **Personal note:** The `minPixelRadius` addition in 0.1.10 is the one I'm most interested in — useful for culling tiny splats on mobile. Need to experiment with values around 1.0–2.0 to find a good default for my scenes.
