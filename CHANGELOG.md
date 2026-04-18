@@ -29,6 +29,8 @@ LOD System (details coming soon)
 
 Performance improvements, SPZ v3 support, new splat transition and reveal effects, brush painting / erasing splat example.
 
+> **Personal note:** The `.ply` parsing speed improvements here are noticeable on larger scenes. Also excited to try the brush painting example for interactive demos.
+
 ### Enhancements
 
 - New splat transition effects (#172) (@kali-shade)
@@ -62,5 +64,3 @@ Image quality and performance improvements.
 
 - Customizable splat encoding ranges (rgb, sh1, sh2, sh3) for wider range of colors and scales support improving contrast and color reproduction. Expose `premultipliedAlpha` flag to use when accumulating splat RGB (#134) (@asundqui)
 - [Experimental Stochastic splat ordering option](https://sparkjs.dev/examples/stochastic/). Faster rendering since sorting no longer needed but with some v
-
-> **Personal note:** The `SplatMesh.getBoundingBox()` addition in 0.1.8 is what I was waiting for — makes frustum culling setups much cleaner. Worth revisiting my scene loader now that this is available.
