@@ -62,4 +62,8 @@ Image quality and performance improvements.
 - [Experimental Stochastic splat ordering option](https://sparkjs.dev/examples/stochastic/). Faster rendering since sorting no longer needed but with some visual quality tradeoffs (#8f5596e) (@asundqui)
 - Higher precision mode (float32) for splat sorting in addition to the default one (float16)
 
-<!-- personal note: I'm primarily using this fork to experiment with the stochastic ordering option and minPixelRadius for mobile performance. The float32 sorting mode is noticeably better quality on my test scenes. -->
+<!-- Personal notes:
+  - I'm mainly using this for the stochastic ordering feature (0.1.7) — really useful for real-time scenes
+  - Worth revisiting the bounding box API (0.1.8) once LOD lands in 2.0.0
+  - The logarithmic depth buffer support (#199) was the main reason I forked this
+-->
