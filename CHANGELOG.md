@@ -8,7 +8,7 @@ LOD System (details coming soon)
 
 [SOG v2](https://blog.playcanvas.com/playcanvas-open-sources-sog-format-for-gaussian-splatting/) support, new examples and bug fixes
 
-> **Personal note:** The `minPixelRadius` property looks handy for culling tiny splats on mobile. Also want to dig into the interactive holes example — could be useful for masking effects. Tested the interactive ripples effect — works great, though I bumped the default ripple strength slightly for more visible results.
+> **Personal note:** The `minPixelRadius` property looks handy for culling tiny splats on mobile. Also want to dig into the interactive holes example — could be useful for masking effects. Tested the interactive ripples effect — works great, though I bumped the default ripple strength slightly for more visible results. The logarithmic depth buffer support (#199) is also worth testing — could help with z-fighting in scenes that mix splats with traditional geometry.
 
 ### Enhancements
 
@@ -56,12 +56,4 @@ Bug fix + SplatMesh bounding box calculation.
 ### Bug fixes
 
 - Fix SH encoding scale factors (#142) (@asundqui, @mrxz, @heimeii)
-- Calculate a SplatMesh's bounding box! `SplatMesh.getBoundingBox()` (#126) (@winnie1994)
-
-### 0.1.7 (July 30, 2025)
-
-Image quality and performance improvements.
-
-### Enhancements
-
-- Customizable splat encoding r
+- Calculate a SplatMesh's bounding box! `SplatMesh.getBoundingBox()` (#126) (@wi
