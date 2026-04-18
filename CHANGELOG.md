@@ -2,6 +2,8 @@
 
 LOD System (details coming soon)
 
+> **Personal note:** Keeping an eye on this release — LOD support could be huge for large scene performance. Will test once details drop.
+
 ### 0.1.10 (Oct 24, 2025)
 
 [SOG v2](https://blog.playcanvas.com/playcanvas-open-sources-sog-format-for-gaussian-splatting/) support, new examples and bug fixes
@@ -61,9 +63,3 @@ Image quality and performance improvements.
 - Customizable splat encoding ranges (rgb, sh1, sh2, sh3) for wider range of colors and scales support improving contrast and color reproduction. Expose `premultipliedAlpha` flag to use when accumulating splat RGB (#134) (@asundqui)
 - [Experimental Stochastic splat ordering option](https://sparkjs.dev/examples/stochastic/). Faster rendering since sorting no longer needed but with some visual quality tradeoffs (#8f5596e) (@asundqui)
 - Higher precision mode (float32) for splat sorting in addition to the default one (float16)
-
-<!-- Personal notes:
-  - I'm mainly using this for the stochastic ordering feature (0.1.7) — really useful for real-time scenes
-  - Worth revisiting the bounding box API (0.1.8) once LOD lands in 2.0.0
-  - The logarithmic depth buffer support (#199) was the main reason I forked this
--->
