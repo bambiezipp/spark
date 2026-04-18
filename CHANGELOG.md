@@ -8,7 +8,7 @@ LOD System (details coming soon)
 
 [SOG v2](https://blog.playcanvas.com/playcanvas-open-sources-sog-format-for-gaussian-splatting/) support, new examples and bug fixes
 
-> **Personal note:** The `minPixelRadius` property looks handy for culling tiny splats on mobile. Also want to dig into the interactive holes example — could be useful for masking effects.
+> **Personal note:** The `minPixelRadius` property looks handy for culling tiny splats on mobile. Also want to dig into the interactive holes example — could be useful for masking effects. Tested the interactive ripples effect — works great, though I bumped the default ripple strength slightly for more visible results.
 
 ### Enhancements
 
@@ -64,4 +64,4 @@ Image quality and performance improvements.
 
 ### Enhancements
 
-- Customizable splat encoding ranges (rgb, sh1, sh2, sh3) for wider range of colors and scales support improving contrast and color reproduction. Expose `premultipliedAlpha` flag to use when accumulating splat RGB (#134) 
+- Customizable splat encoding r
