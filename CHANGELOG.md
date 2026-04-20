@@ -31,7 +31,7 @@ LOD System (details coming soon)
 
 Performance improvements, SPZ v3 support, new splat transition and reveal effects, brush painting / erasing splat example.
 
-> **Personal note:** The `.ply` parsing speed improvements here are noticeable on larger scenes. Also excited to try the brush painting example for interactive demos.
+> **Personal note:** The `.ply` parsing speed improvements here are noticeable on larger scenes. Also excited to try the brush painting example for interactive demos. Worth noting: the ortographic rendering support (#157) is useful for top-down architectural previews — tested with a building scan and it works cleanly.
 
 ### Enhancements
 
@@ -55,5 +55,3 @@ Bug fix + SplatMesh bounding box calculation.
 
 ### Bug fixes
 
-- Fix SH encoding scale factors (#142) (@asundqui, @mrxz, @heimeii)
-- Calculate a SplatMesh's bounding box! `SplatMesh.getBoundingBox()` (#126) (@wi
