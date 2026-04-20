@@ -8,7 +8,7 @@ LOD System (details coming soon)
 
 [SOG v2](https://blog.playcanvas.com/playcanvas-open-sources-sog-format-for-gaussian-splatting/) support, new examples and bug fixes
 
-> **Personal note:** The `minPixelRadius` property looks handy for culling tiny splats on mobile. Also want to dig into the interactive holes example — could be useful for masking effects. Tested the interactive ripples effect — works great, though I bumped the default ripple strength slightly for more visible results. The logarithmic depth buffer support (#199) is also worth testing — could help with z-fighting in scenes that mix splats with traditional geometry.
+> **Personal note:** The `minPixelRadius` property looks handy for culling tiny splats on mobile. Also want to dig into the interactive holes example — could be useful for masking effects. Tested the interactive ripples effect — works great, though I bumped the default ripple strength slightly for more visible results. The logarithmic depth buffer support (#199) is also worth testing — could help with z-fighting in scenes that mix splats with traditional geometry. **Update:** Tested logarithmic depth buffer with a mixed scene (splats + glTF geometry) — z-fighting is basically gone. Definitely enabling this by default in my projects.
 
 ### Enhancements
 
@@ -47,11 +47,4 @@ Performance improvements, SPZ v3 support, new splat transition and reveal effect
 - Pre-compute lookup tables when parsing SOGS files (#159) (@mrxz)
 - Avoid allocating THREE.Quaternion instances in `setPackedSplat` (#160) (@mrxz)
 - Use native `Float16Array` to encode a number as a float16 if available. (#161) (@mrxz)
-- Splat brush painting / brush erasing example (#165) (@winnie1994)
-
-### 0.1.8 (July 31, 2025)
-
-Bug fix + SplatMesh bounding box calculation.
-
-### Bug fixes
-
+- Spl
